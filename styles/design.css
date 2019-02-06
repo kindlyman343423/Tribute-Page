@@ -1,0 +1,62 @@
+
+#title,#title-caption{
+    text-align: center;
+}
+ul{
+    list-style-type: disc;
+}
+img{
+    max-width: 100%; 
+    display: block; 
+    height: auto;
+    margin: auto;
+}
+*{
+    margin: 0;
+}
+blockquote{
+    margin: auto;
+    font-style: italic;
+}
+#title,#title-caption{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+/*BREAKPOINTS*/
+/*small*/
+@media screen and (max-width: 767px){
+    #title{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+    }
+    #title-caption{
+        margin-top: 50px;
+    }
+    .span-year{
+        position: absolute;
+        /* position: fixed; */
+        /* left: 0; */
+        color: blue;
+        font-weight: bold;
+    }
+}
+
+/*tablet*/
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+
+/*tablets/desktop*/
+@media (min-width: 992px) and (max-width: 1199px){
+    
+}
+
+/*large*/
+@media screen and (min-width: 1200px){
+    img{
+        width: 80%;
+    }
+    
+}
