@@ -10,6 +10,10 @@ img{
     display: block; 
     height: auto;
     margin: auto;
+    opacity: 0.97;
+}
+img:hover{
+    opacity: 1;
 }
 *{
     margin: 0;
@@ -17,10 +21,43 @@ img{
 blockquote{
     margin: auto;
     font-style: italic;
+    text-align: center;
+    background-color: #eee;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+#title{
+    background-color: rgb(189, 209, 235);
 }
 #title,#title-caption{
     padding-top: 10px;
     padding-bottom: 15px;
+}
+h3{
+    text-align: center;
+    font-style: italic;
+}
+.tribute-info-p{
+    background-color: rgb(193, 207, 226);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+ul{
+    padding-right: 10px;
+}
+li{
+    padding: 5px;
+}
+
+.span-year{
+    color: rgb(110, 159, 231);
+    font-weight: bold;
+}
+footer{
+    background-color: rgb(189, 209, 235);
+    padding: 20px; 
 }
 /*BREAKPOINTS*/
 /*small*/
@@ -29,17 +66,21 @@ blockquote{
         position: fixed;
         top: 0;
         width: 100%;
-        background-color: white;
     }
     #title-caption{
-        margin-top: 50px;
+        margin-top: 70px;
     }
-    .span-year{
-        position: absolute;
-        /* position: fixed; */
-        /* left: 0; */
-        color: blue;
-        font-weight: bold;
+    img{
+        border-radius: 10px;
+        margin: auto;
+        max-width: 95%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    #img-caption{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        margin-top: 0px;
     }
 }
 
@@ -50,13 +91,49 @@ blockquote{
 
 /*tablets/desktop*/
 @media (min-width: 992px) and (max-width: 1199px){
-    
+    #image{
+        border-radius: 30px;
+        max-width: 98%;
+    }
+    #image-div{
+        padding: 10px;
+        margin: 10px;
+    }
 }
 
 /*large*/
 @media screen and (min-width: 1200px){
-    img{
-        width: 80%;
+    body{
+        font-size: 18px;
     }
-    
+    blockquote,#img-div,.tribute-info-p,ul{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    #title-caption{
+        margin-left: 30%;
+        margin-right: 30%;
+        background-color: white;
+        font-size: 1.65em;
+    }
+    #image{
+        border-radius: 30px;
+    }
+    #img-caption{
+        font-size: 1.3em;
+        background-color: white;
+    }
+    .tribute-info-p{
+        margin-top: 0;
+    }
+    .p1{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .p2{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
 }
